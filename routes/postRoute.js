@@ -11,7 +11,7 @@ import errorHandler from "../errroHandler/errorHandler.js";
 const router = Router();
 
 router.get("/", (req, res) => {
-  res.send({ message: "Server is running", success: true, user: "Doe" });
+  res.send({ message: "Server is running", success: true });
 });
 
 //  GET /posts (Get All Posts)
