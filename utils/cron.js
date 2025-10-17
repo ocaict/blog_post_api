@@ -2,10 +2,10 @@ import { CronJob } from "cron";
 
 // Run Cron Job Every 14 Minutes
 const job = new CronJob(
-  "*/14 * * * *", // Runs every 14 minutes
+  "*/1 * * * *", // Runs every 14 minutes
   async () => {
     // Task to be executed
-    const baseUrl = process.env.RENDER_URL || "http://localhost:3600";
+    const baseUrl = process.env.RENDER_URL;
     try {
       const response = await fetch(`${baseUrl}`);
       const data = await response.json();
