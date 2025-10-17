@@ -32,4 +32,5 @@ cd blog-api-crash-course
 3. Start the development server
    `npm run dev`
 
-📁
+📁 Documentation:
+[https://github.com/ocaict/blog_post_api/blob/main/documentation.md](https://github.com/ocaict/blog_post_api/blob/main/documentation.md/)
