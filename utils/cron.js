@@ -8,8 +8,8 @@ const job = new CronJob(
     const baseUrl = process.env.RENDER_URL;
     try {
       const response = await fetch(`${baseUrl}`);
-      const data = await response.json();
-      console.log("Cron Job executed successfully:", data);
+      const result = await response.json();
+      console.log("Cron Job executed successfully:", result);
     } catch (error) {
       console.error("Error executing Cron Job:", error);
     }
